@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://java.sun.com/jsf/core"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:pm="http://primefaces.org/mobile">
+    <f:view renderKitId="PRIMEFACES_MOBILE">
+        <h:head></h:head>
+        <h:body>
+            <pm:page id="articuloinfo">
+                <pm:header>
+                   Nuevo Articulo
+                </pm:header>
+                <pm:content>
+                    <h:form >
+                        <p:panel header="Informacion ">
+                            <p:panelGrid columns="2">
+                                <h:outputLabel value="Codigo" ></h:outputLabel>
+                                <p:inputText value="#{cArticulo.prNew.codigo}" />
+                                <h:outputLabel value="Articulo:" ></h:outputLabel>
+                                <p:inputText value="#{cArticulo.prNew.articulo}" />
+                                <h:outputLabel value="Nombre:" ></h:outputLabel>
+                                <p:inputText value="#{cArticulo.prNew.nombre}" />
+                                <h:outputLabel value="Descripcion:" ></h:outputLabel>
+                                <p:inputText value="#{cArticulo.prNew.descripcion}" />
+                                
+                                
+                                <p:outputLabel for="selsancion_min" value="sancion_min" />
+                                <p:selectOneMenu id="selsancion_min" value="#{cArticulo.prNew.sancion_min}">
+                                    <f:selectItem itemLabel="Seleccione una sancion" itemValue="" />
+                                        <f:selectItem itemLabel="no posee" itemValue="-" />
+                                        <f:selectItem itemLabel="1 mes" itemValue="1m" />
+                                        <f:selectItem itemLabel="2 meses" itemValue="2m" />
+                                        <f:selectItem itemLabel="3 meses" itemValue="3m" /> 
+                                        <f:selectItem itemLabel="4 meses" itemValue="4m" />
+                                        <f:selectItem itemLabel="5 meses" itemValue="5m" />
+                                        <f:selectItem itemLabel="6 meses" itemValue="6m" /> 
+                                        <f:selectItem itemLabel="7 meses" itemValue="7m" />
+                                        <f:selectItem itemLabel="8 meses" itemValue="8m" />
+                                        <f:selectItem itemLabel="9 meses" itemValue="9m" /> 
+                                        <f:selectItem itemLabel="10 meses" itemValue="10m" />
+                                        <f:selectItem itemLabel="11 meses" itemValue="11m" />
+                                        <f:selectItem itemLabel="1 año" itemValue="1a" /> 
+                                        <f:selectItem itemLabel="2 años" itemValue="2a" />
+                                        <f:selectItem itemLabel="3 años" itemValue="3a" /> 
+                                        <f:selectItem itemLabel="4 años" itemValue="4a" />
+                                        <f:selectItem itemLabel="5 años" itemValue="5a" />
+                                        <f:selectItem itemLabel="6 años" itemValue="6a" /> 
+                                        <f:selectItem itemLabel="7 años" itemValue="7a" />
+                                        <f:selectItem itemLabel="8 años" itemValue="8a" />
+                                        <f:selectItem itemLabel="9 años" itemValue="9a" /> 
+                                        <f:selectItem itemLabel="10 años" itemValue="10a" />
+                                        <f:selectItem itemLabel="11 años" itemValue="11a" />
+                                        <f:selectItem itemLabel="12 años" itemValue="12a" />
+                                        <f:selectItem itemLabel="13 años" itemValue="13a" /> 
+                                        <f:selectItem itemLabel="14 años" itemValue="14a" />
+                                        <f:selectItem itemLabel="15 años" itemValue="15a" />
+                                        <f:selectItem itemLabel="16 años" itemValue="16a" /> 
+                                        <f:selectItem itemLabel="17 años" itemValue="17a" />
+                                        <f:selectItem itemLabel="18 años" itemValue="18a" />
+                                        <f:selectItem itemLabel="19 años" itemValue="19a" /> 
+                                        <f:selectItem itemLabel="20 años" itemValue="20a" />
+                                        <f:selectItem itemLabel="21 años" itemValue="21a" />
+                                        <f:selectItem itemLabel="22 años" itemValue="22a" />
+                                        <f:selectItem itemLabel="23 años" itemValue="23a" /> 
+                                        <f:selectItem itemLabel="24 años" itemValue="24a" />
+                                        <f:selectItem itemLabel="25 años" itemValue="25a" />
+                                </p:selectOneMenu>                                                                                            
+                                
+                                
+                                <p:outputLabel for="selsancion_max" value="sancion_max" />
+                                <p:selectOneMenu id="selsancion_max" value="#{cArticulo.prNew.sancion_max}">
+                                    <f:selectItem itemLabel="Seleccione una sancion" itemValue="" />
+                                        <f:selectItem itemLabel="no posee" itemValue="-" />
+                                        <f:selectItem itemLabel="1 mes" itemValue="1m" />
+                                        <f:selectItem itemLabel="2 meses" itemValue="2m" />
+                                        <f:selectItem itemLabel="3 meses" itemValue="3m" /> 
+                                        <f:selectItem itemLabel="4 meses" itemValue="4m" />
+                                        <f:selectItem itemLabel="5 meses" itemValue="5m" />
+                                        <f:selectItem itemLabel="6 meses" itemValue="6m" /> 
+                                        <f:selectItem itemLabel="7 meses" itemValue="7m" />
+                                        <f:selectItem itemLabel="8 meses" itemValue="8m" />
+                                        <f:selectItem itemLabel="9 meses" itemValue="9m" /> 
+                                        <f:selectItem itemLabel="10 meses" itemValue="10m" />
+                                        <f:selectItem itemLabel="11 meses" itemValue="11m" />
+                                        <f:selectItem itemLabel="1 año" itemValue="1a" /> 
+                                        <f:selectItem itemLabel="2 años" itemValue="2a" />
+                                        <f:selectItem itemLabel="3 años" itemValue="3a" /> 
+                                        <f:selectItem itemLabel="4 años" itemValue="4a" />
+                                        <f:selectItem itemLabel="5 años" itemValue="5a" />
+                                        <f:selectItem itemLabel="6 años" itemValue="6a" /> 
+                                        <f:selectItem itemLabel="7 años" itemValue="7a" />
+                                        <f:selectItem itemLabel="8 años" itemValue="8a" />
+                                        <f:selectItem itemLabel="9 años" itemValue="9a" /> 
+                                        <f:selectItem itemLabel="10 años" itemValue="10a" />
+                                        <f:selectItem itemLabel="11 años" itemValue="11a" />
+                                        <f:selectItem itemLabel="12 años" itemValue="12a" />
+                                        <f:selectItem itemLabel="13 años" itemValue="13a" /> 
+                                        <f:selectItem itemLabel="14 años" itemValue="14a" />
+                                        <f:selectItem itemLabel="15 años" itemValue="15a" />
+                                        <f:selectItem itemLabel="16 años" itemValue="16a" /> 
+                                        <f:selectItem itemLabel="17 años" itemValue="17a" />
+                                        <f:selectItem itemLabel="18 años" itemValue="18a" />
+                                        <f:selectItem itemLabel="19 años" itemValue="19a" /> 
+                                        <f:selectItem itemLabel="20 años" itemValue="20a" />
+                                        <f:selectItem itemLabel="21 años" itemValue="21a" />
+                                        <f:selectItem itemLabel="22 años" itemValue="22a" />
+                                        <f:selectItem itemLabel="23 años" itemValue="23a" /> 
+                                        <f:selectItem itemLabel="24 años" itemValue="24a" />
+                                        <f:selectItem itemLabel="25 años" itemValue="25a" />                                  
+                                </p:selectOneMenu>
+                                
+                                
+                                
+                                 <h:outputLabel value="Multa minima" ></h:outputLabel>
+                                 <p:inputText value="#{cArticulo.prNew.multa_min}" />
+                                 <h:outputLabel value="Multa maxima" ></h:outputLabel>
+                                 <p:inputText value="#{cArticulo.prNew.multa_max}" />
+                                <h:outputLabel value="Palbras Claves" ></h:outputLabel>
+                                <p:inputText value="#{cArticulo.prNew.clave}" />
+                                    
+                            </p:panelGrid>
+                            
+                        </p:panel>
+                        <p:commandLink action="#{cArticulo.insertar()}" value="Insertar" />
+                    </h:form>                    
+                </pm:content>
+                <pm:footer>
+                    Author: Xavier                    
+                </pm:footer>
+            </pm:page>
+                
+        </h:body>
+    </f:view>
+</html>
